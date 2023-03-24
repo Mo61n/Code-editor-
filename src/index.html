@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code editor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <h3>HTML</h3>
+      <textarea id="html-code"></textarea>
+      <br />
+      <button type="button" onclick="clearForm('html-code')">Clear</button>
+    </form>
+    <form>
+      <h3>CSS</h3>
+      <textarea id="css-code"></textarea>
+      <br />
+      <button type="button" onclick="clearForm('css-code')">Clear</button>
+    </form>
+    <form>
+      <h3>JavaScript</h3>
+      <textarea id="js-code"></textarea>
+      <br />
+      <button type="button" onclick="clearForm('js-code')">Clear</button>
+    </form>
+    <br />
+    <button type="button" onclick="runCode()" id="runbtn">Run</button>
+    <br />
+    <br />
+    <iframe id="output"></iframe>
+
+    <script src="script.js"></script>
+  </body>
+</html>
